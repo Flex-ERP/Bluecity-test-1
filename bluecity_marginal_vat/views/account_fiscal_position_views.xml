@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="fiscal_marginal_vat_inherit" model="ir.ui.view">
+        <field name="name">account.fiscal.position.tax</field>
+        <field name="model">account.fiscal.position</field>
+        <field name="inherit_id" ref="account.view_account_position_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="marginal_vat"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+    
